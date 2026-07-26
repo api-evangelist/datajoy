@@ -1,8 +1,24 @@
 aid: datajoy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/datajoy.png
 name: Datajoy
-description: 'Datajoy is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Applicative SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Datajoy was a data-science / analytics SaaS startup surfaced as a portfolio-company lead
+  (sector: Applicative SaaS). As of the 2026-07-18 enrichment probe the datajoy.com domain no longer serves
+  an independent product: it issues an HTTP 301 redirect to https://www.databricks.com/product/business-intelligence,
+  indicating the company/brand has been acquired by or folded into Databricks. No independent Datajoy public
+  API, developer portal, documentation, or /.well-known/ discovery surface exists (api.datajoy.com and
+  docs.datajoy.com do not resolve; /.well-known/security.txt returns 404). This stub is retained for lineage;
+  there is no live provider surface to enrich, so no API artifacts were generated.'
 url: https://raw.githubusercontent.com/api-evangelist/datajoy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,9 +26,12 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired-or-defunct
+x-redirects-to: https://www.databricks.com/product/business-intelligence
+x-enrichment-probed: '2026-07-18'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Applicative Saas
@@ -25,3 +44,8 @@ maintainers:
 common:
 - type: Website
   url: https://datajoy.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
