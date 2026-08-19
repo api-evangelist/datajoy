@@ -29,7 +29,7 @@ x-tier-reason: portfolio-lead
 x-status: acquired-or-defunct
 x-redirects-to: https://www.databricks.com/product/business-intelligence
 x-enrichment-probed: '2026-07-18'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
